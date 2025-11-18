@@ -1,0 +1,32 @@
+package com.ankit;
+import java.util.Scanner;
+public class Problem1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers and the operator");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		String operator = sc.next();
+		
+		switch(operator) {
+		case "+":
+			System.out.println(a + b);
+			break;
+		case "-":
+			System.out.println(a + b);
+			break;
+		case "*":
+			System.out.println(a * b);
+			break;
+		case "/":
+			System.out.println(a / b);
+			break;
+		default:
+			System.out.println("Invalid Operatot");
+		}
+		sc.close();
+	}
+
+}
